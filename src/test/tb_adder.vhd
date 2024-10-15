@@ -1,23 +1,23 @@
 --
 -- File: tb_adder.vhd
--- Created Date: 2024-10-15 01:42:54 pm
+-- Created Date: 2024-10-15 01:58:44 pm
 -- Author: Mathieu Escouteloup
 -- -----
--- Last Modified: 2024-10-15 03:03:50 pm
+-- Last Modified: 2024-10-15 04:31:51 pm
 -- Modified By: Mathieu Escouteloup
--- Email: mathieu.escouteloup@ims-bordeaux.com
+-- Email: mathieu.escouteloup@enseirb-matmeca.fr
 -- -----
 -- License: See LICENSE.md
--- Copyright (c) 2024 HerdWare
+-- Copyright (c) 2024 ENSEIRB-MATMECA
 -- -----
 -- Description: 
 --
 
 
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.std_logic_unsigned.all;
-use IEEE.numeric_std.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 library vunit_lib;
 context vunit_lib.vunit_context;

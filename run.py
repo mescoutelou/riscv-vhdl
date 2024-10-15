@@ -3,15 +3,16 @@
  # Created Date: 2024-10-15 01:41:51 pm                                        #
  # Author: Mathieu Escouteloup                                                 #
  # -----                                                                       #
- # Last Modified: 2024-10-15 02:42:03 pm                                       #
+ # Last Modified: 2024-10-15 04:50:10 pm                                       #
  # Modified By: Mathieu Escouteloup                                            #
  # Email: mathieu.escouteloup@ims-bordeaux.com                                 #
  # -----                                                                       #
  # License: See LICENSE.md                                                     #
- # Copyright (c) 2024 HerdWare                                                 #
+ # Copyright (c) 2024 ENSEIRB-MATMECA                                          #
  # -----                                                                       #
  # Description:                                                                #
 ###
+
 
 from vunit import VUnit
 
@@ -25,14 +26,16 @@ vu.add_vhdl_builtins()
 # vu.add_verilog_builtins()
 
 
-# Create library 'lib'
-lib = vu.add_library("lib")
+# Create library 'emmk'
+lib = vu.add_library("emmk")
 
 vu.set_compile_option("ghdl.a_flags", ["-fsynopsys"])
 
 # Add all files ending in .vhd in current working directory to library
 lib.add_source_files("src/main/*.vhd")
+lib.add_source_files("src/main/core/*.vhd")
 lib.add_source_files("src/test/*.vhd")
+lib.add_source_files("src/test/core/*.vhd")
 
 #vu.set_compile_option("ghdl.a_flags", ["--ieee=standard"])
 vu.set_compile_option("ghdl.a_flags", ["-fsynopsys"])

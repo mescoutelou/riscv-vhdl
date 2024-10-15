@@ -1,17 +1,18 @@
 --
 -- File: tb_example_many.vhd
--- Created Date: 2024-10-15 01:57:43 pm
+-- Created Date: 2024-10-15 01:58:44 pm
 -- Author: Mathieu Escouteloup
 -- -----
--- Last Modified: 2024-10-15 01:57:49 pm
+-- Last Modified: 2024-10-15 04:28:47 pm
 -- Modified By: Mathieu Escouteloup
--- Email: mathieu.escouteloup@ims-bordeaux.com
+-- Email: mathieu.escouteloup@enseirb-matmeca.fr
 -- -----
 -- License: See LICENSE.md
--- Copyright (c) 2024 HerdWare
+-- Copyright (c) 2024 ENSEIRB-MATMECA
 -- -----
 -- Description: 
 --
+
 
 library vunit_lib;
 context vunit_lib.vunit_context;
